@@ -8,12 +8,12 @@ from contextlib import contextmanager
 
 from odoo import fields
 from odoo.tools import mute_logger
-from odoo.tests.common import HttpCase
+from odoo.tests.common import TransactionCase
 
 from ..models import account_analytic_account
 
 
-class TestAccountAnalyticAccount(HttpCase):
+class TestAccountAnalyticAccount(TransactionCase):
 
     def setUp(self):
         super(TestAccountAnalyticAccount, self).setUp()
